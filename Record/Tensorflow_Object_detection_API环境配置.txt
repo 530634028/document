@@ -1,0 +1,9 @@
+1、下载Protobuf（3.6.1版本在执行3命令时会出现--No such file or directory错误，所以选择3.4.0版本）
+2、将bin文件夹中的protoc.exe拷贝至C/Windows文件夹中
+3、在Cmd中进入models/research目录中，执行如下：protoc .\object_detection\protos\*.proto --python_out=.（即完成Protobuf安装）
+
+4、执行：python setup.py build
+               python setup.py install
+
+5、设置环境变量：PYTHONPATH-- $(basicpath)/models/research 以及 $(basicpath)/models/research/slim，（注意：目前测试只能设置在Users中的环境变量，如果设置在system中的环境变量，不起作用）
+6、即可使用该库中的object_detection
