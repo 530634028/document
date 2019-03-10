@@ -5,5 +5,5 @@
 4、执行：python setup.py build
                python setup.py install
 
-5、设置环境变量：PYTHONPATH-- $(basicpath)/models/research 以及 $(basicpath)/models/research/slim，（注意：目前测试只能设置在Users中的环境变量，如果设置在system中的环境变量，不起作用）
+5、设置环境变量：PYTHONPATH-- $(basicpath)/models/research 以及 $(basicpath)/models/research/slim，（注意：设置在Users中的环境变量，如果前面设置无效，则设置在system中的环境变量中）
 6、即可使用该库中的object_detection
